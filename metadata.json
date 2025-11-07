@@ -1,0 +1,8 @@
+{
+  "name": "Android Camera UI Clone",
+  "description": "A React application that replicates the user interface and basic functionality of an Android camera app, allowing users to take photos and record videos.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
