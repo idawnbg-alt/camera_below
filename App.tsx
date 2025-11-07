@@ -106,11 +106,8 @@ const CameraHeader: React.FC = () => (
     <button className="text-white">
       <CameraIcon name="flashOff" className="w-7 h-7" />
     </button>
-    <span className="text-yellow-400 font-bold text-lg">FHD</span>
-    <div className="flex items-center space-x-6">
-      <button className="text-white">
-        <CameraIcon name="beauty" className="w-7 h-7" />
-      </button>
+    <span className="text-yellow-400 text-lg">FHD</span>
+    <div className="flex items-center">
       <button className="text-white" aria-label="Paramètres">
         <CameraIcon name="settings" className="w-7 h-7" />
       </button>
@@ -151,7 +148,7 @@ const ModeSelector: React.FC<ModeSelectorProps> = ({ currentMode, onModeChange }
       {/* Note: Hiding scrollbar on Webkit browsers (Chrome, Safari) requires a CSS class with a pseudo-selector, 
           which can't be applied via inline styles. Functionality remains the same. */}
       <div 
-        className="flex items-center space-x-8 text-white px-[50%]"
+        className="flex items-baseline space-x-8 text-white px-[50%]"
       >
         {modes.map((mode) => (
           <div key={mode} className="flex flex-col items-center flex-shrink-0 snap-center">
